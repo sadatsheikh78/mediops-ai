@@ -1,36 +1,221 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MediOps AI
 
-## Getting Started
+AI-powered hospital operations intelligence and predictive analytics platform built using FastAPI, Next.js, TypeScript, and real-time simulation pipelines.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Overview
+
+MediOps AI is a futuristic healthcare operations platform designed to simulate and optimize real-time hospital workflows.
+
+The system combines:
+- Predictive forecasting
+- Operational anomaly detection
+- ICU/resource optimization
+- Patient flow intelligence
+- AI-driven decision recommendations
+- Executive analytics dashboards
+
+The platform simulates how modern hospitals can use AI to reduce bottlenecks, improve throughput, and enhance operational efficiency.
+
+---
+
+# Core Features
+
+## Real-Time Hospital Monitoring
+- Emergency admissions tracking
+- Ambulance telemetry
+- Staff allocation visibility
+- Live triage queues
+
+## AI Forecasting Engine
+- Emergency admission forecasting
+- XGBoost/LSTM simulation pipelines
+- Confidence interval projections
+- Resource load prediction
+
+## Decision Intelligence Engine
+- AI-generated operational recommendations
+- ICU overflow mitigation
+- Staff redistribution logic
+- Risk score computation
+
+## Anomaly Detection Center
+- Billing anomaly detection
+- ICU overload alerts
+- Wait-time spike detection
+- Operational risk scoring
+
+## Resource Optimization
+- ICU bed tracking
+- Ventilator allocation
+- Oxygen supply monitoring
+- Emergency staff utilization
+
+## Patient Flow Intelligence
+- Department transition visualization
+- Capacity bottleneck mapping
+- Flow-network simulation
+
+## AI Operations Assistant
+- Natural language operational querying
+- Executive summaries
+- Real-time analytics responses
+
+## Reporting Module
+- Executive operation summaries
+- Resource audit reports
+- Printable compliance exports
+
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+## Backend
+- FastAPI
+- Python
+- SQLite
+
+## AI / Simulation
+- Predictive forecasting engine
+- Operational simulation models
+- Rule-based anomaly detection
+
+---
+
+# Project Architecture
+
+```text
+Frontend (Next.js)
+        ↓
+FastAPI Backend APIs
+        ↓
+Operational Intelligence Engine
+        ↓
+Forecasting + Anomaly Pipelines
+        ↓
+SQLite Simulation Database
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Folder Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+MediOps/
+│
+├── backend/
+│   ├── main.py
+│   ├── forecasting.py
+│   ├── anomaly_detector.py
+│   ├── database.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── seed.py
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+└── README.md
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Clone Repository
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git clone https://github.com/sadatsheikh78/mediops-ai.git
+cd mediops-ai
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Backend Setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+cd backend
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python seed.py
+
+uvicorn main:app --reload
+```
+
+Backend runs on:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# Frontend Setup
+
+Open another terminal:
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:3000
+```
+
+---
+
+# Future Enhancements
+
+- Real WebSocket telemetry pipelines
+- Multi-hospital distributed simulations
+- ML-based anomaly classification
+- Role-based authentication
+- Cloud deployment pipeline
+- Live operational database integration
+
+---
+
+# Screenshots
+
+## Dashboard
+(Add screenshots here)
+
+## Monitoring System
+(Add screenshots here)
+
+## Forecasting Engine
+(Add screenshots here)
+
+---
+
+# Author
+
+Mohammad Sadat Sheikh
+
+GitHub:
+https://github.com/sadatsheikh78
+
+---
+
+# License
+
+This project is developed for educational, research, and portfolio purposes.
